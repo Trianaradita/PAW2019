@@ -1,0 +1,20 @@
+body {
+	background-color:salmon;
+    font-family: Arial;
+}
+div.content {
+    height: 500px;
+    background-color: lightskyblue;
+    border: 5px solid lightskyblue;
+}
+div.boxform {
+    height: 400px;
+    background-color: yellowgreen;
+    border: 1px solid yellowgreen;
+}
+span{
+	color:red;
+}
+h3{
+	color:
+}

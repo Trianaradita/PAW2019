@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Registration Form</title>
+		<link href="../RegistrationForm.css" type="text/css" rel="stylesheet">
+	</head>
+	<body>
+		<div class=judul id="judul"><h1>Registration Form</h1>
+		<div class=content id="content">
+		<p>Person Details</p>
+		<div class=boxform id="boxform">
+			<form name="formreg" action="RegistrationForm.php" method="POST" >
+			<table>
+				<tr>
+				<td><label for="surname">Surname</label></td>
+				<td><input id="surname" name="surname" type="text" size="30" placeholder="Enter your surname" ><span class="error"> <?php echo $surnameerror;?></span></td>
+				</tr>
+				<tr>
+				<td><label for="firstname">Firstname</label></td>
+				<td><input id="firstname" name="firstname" type="text" size="30" placeholder="Enter your firstname"><span class="error"> <?php echo $firsterror;?></span></td>
+				</tr>
+				<tr>
+				<td><label for="mail">Email Address</label></td>
+				<td><input id="mail" name="email" type="text" size="30" placeholder="Enter your email"><span class="error"> <?php echo $emailerror;?></span></td>
+				</tr>
+				<tr>
+				<td><label for="nohp">Mobile Number</label></td>
+				<td><input id="nohp" name="number" type="text" size="30" placeholder="Enter your number"><span class="error"> <?php echo $mobileerror;?></span></td>
+				</tr>
+				<tr>
+				<td><label for="pass">Password</label></td>
+				<td><input id="pass" name="password" type="password" size="30" placeholder="**********"><span class="error"> <?php echo $passerror;?></span></td>
+				</tr>
+				<tr>
+				<td><label for="confirmpass">Confirm Password</label></td>
+				<td><input id="confirmpass" name="confirmpass" type="password" size="30" placeholder="**********"><span class="error"> <?php echo $confirmerror;?></span></td>
+				</tr>
+				<tr>
+				<td><label> &nbsp; </label>
+				<td><input type="submit" name="Register" id="Register" value="Register">
+				<input type="reset" name="butt" id="butt" value="Reset"></td>
+				</tr>
+			</table>
+			</form>
+		</div>
+		</div>
+		</div>
+	</body>
+</html>
